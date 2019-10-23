@@ -1,12 +1,16 @@
 $(function () {
 
     $('.header_slider').slick({
-       infinite: true,
+        infinite: true,
         fade: true,
-        prevArrow: '<img src="img/arrow-left.svg" alt="">',
-        nextArrow: '<img src="img/arrow-right.svg" alt="">',
-
+        prevArrow: '<img class="slider-arrow slider-arrow-left" src="img/arrow-left.svg" alt="">',
+        nextArrow: '<img class="slider-arrow slider-arrow-right" src="img/arrow-right.svg" alt="">',
+        asNavFor: '.slider-dots',
     });
 
-
+    $('.slider-dots').slick({
+        slidesToScroll: 4,
+        slidesToShow: 4,
+        asNavFor: '.header_slider',
+    });
 });

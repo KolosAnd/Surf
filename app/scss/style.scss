@@ -14,6 +14,11 @@
   }
 }
 
+.header {
+  position: relative;
+  height: 100vh;
+}
+
 .slider-item_info {
   position: absolute;
   right: 80px;
@@ -30,18 +35,65 @@
 
   margin-bottom: 48px;
 }
-.slider-item_info-suptitle{
+
+.slider-item_info-suptitle {
   margin-bottom: 5px;
 }
-.slider-item_info-suptext{
+
+.slider-item_info-suptext {
   margin-bottom: 8px;
 }
-.slider-item_info-text{
+
+.slider-item_info-text {
   font-weight: 800;
   font-size: 40px;
   line-height: 46px;
   margin-bottom: 20px;
+}
 
+.slider-arrow {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.slider-arrow-left {
+  right: 125px;
+}
+
+.slider-dots {
+  position: absolute;
+  right: 50px;
+  bottom: 36px;
+  max-width: 920px;
+  width: 100%;
+  color: #FFFFFF;
+  .slick-current{
+    .dots-box{
+      border-top: 4px solid $green;
+    }
+  }
+}
+
+.dots-box {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  height: 28px;
+  align-items: center;
+  border-top: 4px solid #fff ;
+  padding-top: 6px;
+  &_number {
+    font-weight: 800;
+    line-height: 34px;
+    font-size: 24px;
+  }
+  &_name{
+    font-weight: 300;
+    line-height: 19px;
+  }
 }
 
 @import "media";
