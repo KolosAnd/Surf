@@ -70,8 +70,9 @@
   max-width: 920px;
   width: 100%;
   color: #FFFFFF;
-  .slick-current{
-    .dots-box{
+
+  .slick-current {
+    .dots-box {
       border-top: 4px solid $green;
     }
   }
@@ -83,17 +84,34 @@
   justify-content: space-between;
   height: 28px;
   align-items: center;
-  border-top: 4px solid #fff ;
+  border-top: 4px solid #fff;
   padding-top: 6px;
+
   &_number {
     font-weight: 800;
     line-height: 34px;
     font-size: 24px;
   }
-  &_name{
+
+  &_name {
     font-weight: 300;
     line-height: 19px;
   }
+}
+.header-aside{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.header-aside-title {
+  font-size: 200px;
+  line-height: 156px;
+text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 467px;
+  opacity: 0.07;
+  font-weight: 800;
 }
 
 @import "media";
