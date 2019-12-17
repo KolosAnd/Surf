@@ -105,6 +105,8 @@
   left: 0;
   z-index: 5;
   border-right: 1px solid rgba(#fff, .25);
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .header-title {
@@ -122,9 +124,7 @@
 }
 
 .menu {
-  &-list {
-    text-align: center;
-
+  padding-top: 40px;
     a {
       color: #FFFFFF;
 
@@ -135,10 +135,57 @@
         line-height: 14px;
         letter-spacing: 3px;
         padding-top: 6px;
-        margin-bottom: 37px;
+        margin-bottom: 20px;
       }
     }
+}
+.header-date{
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 64px;
+  span{
+    padding-top: 17px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    margin-bottom: 30px;
+    display: block;
   }
 }
 
+.header-location{
+  display: inline-block;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1.05px;
+  position: relative;
+  padding-left: 19px;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 13px;
+    background-image: url("../img/geo-mark.svg") ;
+    left: 0;
+    top: 0;
+  }
+}
+.header-search{
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+.header-map{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+.header-arrows{
+  position: absolute;
+  left: 210px;
+  bottom: 30px;
+  z-index: 3;
+}
 @import "media";
