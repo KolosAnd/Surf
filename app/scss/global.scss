@@ -5,7 +5,7 @@
 
   text-align: right;
   letter-spacing: 7.33333px;
-  text-transform: uppercase;
+
 
   color: #FFFFFF;
   opacity: 0.5;
@@ -31,8 +31,12 @@ body{
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  background-color: #171919;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 a {
   display: inline-block;
   text-decoration: none;
+  color: #FFFFFF;
 }
